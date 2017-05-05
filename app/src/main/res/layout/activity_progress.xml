@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_progress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_progress_loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="玩命加载中..."
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <!--
+       android:layout_marginLeft="20dp"
+       TextView距离左边控件有20dp
+    -->
+
+    <ProgressBar
+        android:id="@+id/pb_progress_loading"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:progress="50" />
+
+    <SeekBar
+        android:id="@+id/sb_progress_voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="20" />
+
+    <!--
+    SeekBar 是间接继承ProgressBar
+    max 默认是100
+    progress：设置进度值
+    progress="50"，代表进度了一半
+
+    -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.滑动下面的滑杆后, 上面的进度条会同步\n2. 滑动到最大值时, 最上面的进度条消失\n3.滑动不是最大值时，显示最上面的进度条
+" />
+
+
+</LinearLayout>
+

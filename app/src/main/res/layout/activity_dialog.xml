@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- DialogActivity -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showAD"
+        android:text="显示一般AlertDialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showLD"
+        android:text="显示单选列表AlertDialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showCD"
+        android:text="显示自定义AlertDialog"
+        android:textAllCaps="false" />
+
+
+    <!-- ProgressDialog -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="showPD"
+        android:text="显示圆形进度ProgressDialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showPD2"
+        android:text="显示水平进度ProgressDialog"
+        android:textAllCaps="false" />
+
+
+    <!-- DatePickerDialog与TimePickerDialog -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="showDateAD"
+        android:text="显示DatePickerDialog"
+        android:textAllCaps="false" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showTimeAD"
+        android:text="显示TimePickerDialog"
+        android:textAllCaps="false" />
+
+</LinearLayout>
